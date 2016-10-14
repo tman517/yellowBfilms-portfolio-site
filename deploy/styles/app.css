@@ -54,6 +54,17 @@ div, ul {
   display: none;
   overflow: hidden;
   z-index: 9000; }
+  #preloader_wrapper .bg {
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/preloader_bg.jpg");
+    background-size: cover;
+    background-repeat: none;
+    background-position: center;
+    transition: 500ms;
+    -webkit-transition: 500ms; }
+  #preloader_wrapper .bg.hide {
+    opacity: 0; }
   #preloader_wrapper .loaderBar {
     width: 0%;
     height: 7px;
@@ -89,7 +100,7 @@ div, ul {
   #desktop_wrapper .bg {
     width: 100%;
     height: 100%;
-    background-image: url("../images/bg.jpg");
+    background-image: url("../images/bg4.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -154,6 +165,78 @@ div, ul {
       top: -68px; }
     #desktop_wrapper .home_wrapper .logo_wrapper .logoRight.show {
       background-position: 20px 0px; }
+  #desktop_wrapper .home_wrapper .content_wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px; }
+    #desktop_wrapper .home_wrapper .content_wrapper .category_wrapper {
+      width: auto;
+      height: auto;
+      position: absolute; }
+      #desktop_wrapper .home_wrapper .content_wrapper .category_wrapper .thumb {
+        border: 4px solid #000000;
+        border-radius: 300px;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        background-color: #ffffff;
+        overflow: hidden;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        opacity: 0;
+        transition: 500ms;
+        -webkit-transition: 500ms;
+        transform: translateY(-20px); }
+        #desktop_wrapper .home_wrapper .content_wrapper .category_wrapper .thumb .label {
+          width: 100%;
+          height: 27%;
+          text-align: center;
+          color: #ffffff;
+          background-color: rgba(0, 0, 0, 0.4);
+          position: absolute;
+          bottom: 0px;
+          left: 0px;
+          font-family: 'Rubik', sans-serif;
+          font-size: 11px;
+          font-weight: 300;
+          line-height: 25px;
+          letter-spacing: 8px;
+          text-indent: 8px; }
+      #desktop_wrapper .home_wrapper .content_wrapper .category_wrapper .thumb.show {
+        opacity: 1;
+        transform: translateY(0px); }
+      #desktop_wrapper .home_wrapper .content_wrapper .category_wrapper.cars {
+        top: 15%;
+        left: 11%; }
+        #desktop_wrapper .home_wrapper .content_wrapper .category_wrapper.cars .thumb {
+          width: 300px;
+          height: 300px;
+          background-image: url("../images/cars_thumb.jpg"); }
+      #desktop_wrapper .home_wrapper .content_wrapper .category_wrapper.commercial {
+        top: 10%;
+        left: 67%; }
+        #desktop_wrapper .home_wrapper .content_wrapper .category_wrapper.commercial .thumb {
+          width: 200px;
+          height: 200px;
+          background-image: url("../images/commercial_thumb.jpg"); }
+      #desktop_wrapper .home_wrapper .content_wrapper .category_wrapper.fashion {
+        top: 67%;
+        left: 30%; }
+        #desktop_wrapper .home_wrapper .content_wrapper .category_wrapper.fashion .thumb {
+          width: 260px;
+          height: 260px;
+          background-image: url("../images/fashion_thumb.jpg"); }
+      #desktop_wrapper .home_wrapper .content_wrapper .category_wrapper.reality {
+        top: 55%;
+        left: 68%; }
+        #desktop_wrapper .home_wrapper .content_wrapper .category_wrapper.reality .thumb {
+          width: 190px;
+          height: 190px;
+          background-image: url("../images/reality_thumb.jpg"); }
 
 #mobile_wrapper {
   width: 100%;

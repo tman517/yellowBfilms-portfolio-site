@@ -14,7 +14,7 @@ function Site(){
 	var _atPreloader = true;
 
 	var _prePreloadManifest = [
-		{id:"logo", src:"images/logo.png"}
+		{id:"preloader_bg", src:"images/preloader_bg.jpg"}
 	];
 
 	var _preloadManifest = [
@@ -102,6 +102,8 @@ function Site(){
 			// shrink loader bar
 			$("#preloader_wrapper .loaderBar").addClass("shrink");
 
+			$("#preloader_wrapper .bg").addClass("hide");
+
 			setTimeout(function(){
 				$("#desktop_wrapper .logo_wrapper .logoCenter").addClass("show");
 
@@ -109,6 +111,25 @@ function Site(){
 					$("#desktop_wrapper .logo_wrapper .logoLeft").addClass("show");
 					$("#desktop_wrapper .logo_wrapper .logoRight").addClass("show");
 					$("#desktop_wrapper .bg").addClass("show");
+
+					$("#preloader_wrapper").remove();
+
+					setTimeout(function(){
+						$("#desktop_wrapper .category_wrapper.cars .thumb").addClass("show");
+					}, 600);
+
+					setTimeout(function(){
+						$("#desktop_wrapper .category_wrapper.commercial .thumb").addClass("show");
+					}, 800);
+
+					setTimeout(function(){
+						$("#desktop_wrapper .category_wrapper.fashion .thumb").addClass("show");
+					}, 1000);
+
+					setTimeout(function(){
+						$("#desktop_wrapper .category_wrapper.reality .thumb").addClass("show");
+					}, 1200);
+
 				}, 200);
 				
 			}, 200);

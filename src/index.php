@@ -21,7 +21,7 @@ require_once 'includes/config.php';
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 	
 		<link rel="canonical" href="<?= $ROOT_URL ?>" />	
-		<link rel="shortcut icon" type="image/gif" href="images/sonypictures_favicon.ico" />
+		<link rel="shortcut icon" type="image/gif" href="images/favicon.ico" />
 
 		<!-- FONTS -->
 		<!-- font-family: 'Rubik', sans-serif; -->
@@ -50,6 +50,28 @@ require_once 'includes/config.php';
 					<div class="logoCenter"></div>
 					<div class="logoRight"></div>
 				</div>
+				<div class="content_wrapper">
+					<div class="category_wrapper cars">
+						<div class="thumb">
+							<div class="label">CARS</div>
+						</div>
+					</div>
+					<div class="category_wrapper commercial">
+						<div class="thumb">
+							<div class="label">COMMERCIAL</div>
+						</div>
+					</div>
+					<div class="category_wrapper fashion">
+						<div class="thumb">
+							<div class="label">FASHION</div>
+						</div>
+					</div>
+					<div class="category_wrapper reality">
+						<div class="thumb">
+							<div class="label">REALITY</div>
+						</div>
+					</div>
+				</div>
 			</div>
 
 		</div>
@@ -63,6 +85,7 @@ require_once 'includes/config.php';
 
 		<!-- PRELOADER WRAPPER -->
 		<div id="preloader_wrapper">
+			<div class="bg"></div>
 			<div class="loaderBar"></div>
 			<div class="percentage">0%</div>
 		</div>
