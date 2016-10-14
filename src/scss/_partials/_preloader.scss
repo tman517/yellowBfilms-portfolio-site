@@ -1,0 +1,41 @@
+
+
+#preloader_wrapper {
+	width:100%;
+	height:100%;
+	position:absolute;
+	background-color:transparent;
+	top:0px;
+	left:0px;
+	display:none;
+	overflow:hidden;
+	z-index:9000;
+
+	.loaderBar{
+		width:0%;
+		height:7px;
+		position:absolute;
+		top:50%;
+		left:0px;
+		background-color:#000000;
+		transition:300ms;
+		-webkit-transition:300ms;
+	}
+
+	.loaderBar.shrink {
+		transform:scale(0, 1);
+	}
+
+	.percentage {
+		width:100%;
+		height:auto;
+		text-align:center;
+		position:absolute;
+		font-family: 'Rubik', sans-serif; 
+		font-size:30px;
+		font-weight:bold;
+		top:50%;
+		left:0px;
+		transform:translateY(23px);
+	}
+}

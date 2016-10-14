@@ -1,0 +1,61 @@
+
+/* ===============================================
+ GENERAL
+=============================================== */
+
+html, body {
+	margin:0px;
+	padding:0px;
+	width:100%;
+	height:100%;
+	background-color:#ffffff;
+}
+
+body {
+	
+}
+
+div, a, img {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	outline:0;
+}
+
+
+div, ul {
+	margin:0px;
+	padding:0px;
+}
+
+.seo_title {
+	display:none;
+}
+
+
+.closeBtn {
+	width:32px;
+	height:32px;
+	text-align:center;
+	font-size:23px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:bold;
+	border-radius:17px;
+	color:#0f9cea;
+	background-color:#ffffff;
+	background-image:none;
+	text-decoration:none;
+	display:block;
+	line-height:33px;
+	position:absolute;
+	cursor:pointer;
+	-webkit-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.6);
+	-moz-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.6);
+	box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.6);
+	transition:300ms;
+
+	&:hover {
+		color:#ffffff;
+		background-color:#0f9cea;
+		transform:scale(1.2) rotateZ(360deg);
+	}
+}
+

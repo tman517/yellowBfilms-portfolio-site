@@ -1,0 +1,174 @@
+/* ===============================================
+ GENERAL
+=============================================== */
+html, body {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff; }
+
+div, a, img {
+  -webkit-tap-highlight-color: transparent;
+  outline: 0; }
+
+div, ul {
+  margin: 0px;
+  padding: 0px; }
+
+.seo_title {
+  display: none; }
+
+.closeBtn {
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  font-size: 23px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  border-radius: 17px;
+  color: #0f9cea;
+  background-color: #ffffff;
+  background-image: none;
+  text-decoration: none;
+  display: block;
+  line-height: 33px;
+  position: absolute;
+  cursor: pointer;
+  -webkit-box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.6);
+  box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.6);
+  transition: 300ms; }
+  .closeBtn:hover {
+    color: #ffffff;
+    background-color: #0f9cea;
+    transform: scale(1.2) rotateZ(360deg); }
+
+#preloader_wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: transparent;
+  top: 0px;
+  left: 0px;
+  display: none;
+  overflow: hidden;
+  z-index: 9000; }
+  #preloader_wrapper .loaderBar {
+    width: 0%;
+    height: 7px;
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    background-color: #000000;
+    transition: 300ms;
+    -webkit-transition: 300ms; }
+  #preloader_wrapper .loaderBar.shrink {
+    transform: scale(0, 1); }
+  #preloader_wrapper .percentage {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    position: absolute;
+    font-family: 'Rubik', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    top: 50%;
+    left: 0px;
+    transform: translateY(23px); }
+
+#desktop_wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  display: none;
+  overflow: hidden;
+  z-index: 1000; }
+  #desktop_wrapper .bg {
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 0;
+    position: absolute;
+    transition: 300ms;
+    -webkit-transition: 700ms;
+    opacity: 0; }
+  #desktop_wrapper .bg.show {
+    opacity: 1; }
+
+#desktop_wrapper .home_wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  z-index: 1000; }
+  #desktop_wrapper .home_wrapper .logo_wrapper {
+    position: relative;
+    top: 50%;
+    left: 0px;
+    margin: 0px auto;
+    text-align: center;
+    transform: translate(-17px, -87px); }
+    #desktop_wrapper .home_wrapper .logo_wrapper .logoLeft {
+      width: 189px;
+      height: 40px;
+      background-image: url("../images/logo_left.png");
+      background-repeat: no-repeat;
+      background-position: 190px 0px;
+      transition: 500ms;
+      -webkit-transition: 500ms;
+      display: inline-block;
+      position: relative;
+      top: -68px; }
+    #desktop_wrapper .home_wrapper .logo_wrapper .logoLeft.show {
+      background-position: 0px 0px; }
+    #desktop_wrapper .home_wrapper .logo_wrapper .logoCenter {
+      width: 88px;
+      height: 180px;
+      background-image: url("../images/logo_center.png");
+      background-repeat: no-repeat;
+      background-position: 0px 0px;
+      margin: 0px;
+      transition: 500ms;
+      -webkit-transition: 500ms;
+      display: inline-block;
+      transform: scaleX(0); }
+    #desktop_wrapper .home_wrapper .logo_wrapper .logoCenter.show {
+      transform: scaleX(1); }
+    #desktop_wrapper .home_wrapper .logo_wrapper .logoRight {
+      width: 156px;
+      height: 40px;
+      background-image: url("../images/logo_right.png");
+      background-repeat: no-repeat;
+      background-position: -137px 0px;
+      transition: 500ms;
+      -webkit-transition: 500ms;
+      display: inline-block;
+      position: relative;
+      top: -68px; }
+    #desktop_wrapper .home_wrapper .logo_wrapper .logoRight.show {
+      background-position: 20px 0px; }
+
+#mobile_wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  display: none;
+  z-index: 1000; }
+
+#mobile_wrapper .home_wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: 1000;
+  transition: 300ms; }

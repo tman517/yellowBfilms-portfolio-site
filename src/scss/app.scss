@@ -1,0 +1,12 @@
+
+@import '_partials/global';
+@import '_partials/preloader';
+
+// desktop
+@import '_partials/desktop/main';
+@import '_partials/desktop/home';
+
+// mobile
+@import '_partials/mobile/main';
+@import '_partials/mobile/home';
+

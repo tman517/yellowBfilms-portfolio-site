@@ -1,0 +1,409 @@
+<xml>
+
+	<!-- FACEBOOK ID -->
+	<facebook>
+		<appid><![CDATA[xxxxxxxxxxxappidxxxxxxxxx]]></appid>
+	</facebook>
+
+	<!-- HEAD and META -->
+	<head>
+		<title><![CDATA[YellowBFilms]]></title>
+		<meta>
+			<description><![CDATA[]]></description>
+			<keywords><![CDATA[]]></keywords>
+			<og>
+				<title><![CDATA[YellowBFilms]]></title>
+				<url><![CDATA[http://yellowbfilms.com]]></url>
+				<description><![CDATA[]]></description>
+			</og>
+		</meta>
+	</head>
+
+	<!-- HOME SECTION -->
+	<home>
+		<label><![CDATA[HOME]]></label>
+	</home>
+
+	<!-- ABOUT SECTION -->
+	<about>
+		<label><![CDATA[ABOUT]]></label>
+		<synopsis><![CDATA[In this fully animated, all-new take on the Smurfs, a mysterious map sets Smurfette and her best friends Brainy, Clumsy and Hefty on an exciting and thrilling race through the Forbidden Forest filled with magical creatures to find a mysterious lost village before the evil wizard Gargamel does.  Embarking on a rollercoaster journey full of action and danger, the Smurfs are on a course that leads to the discovery of the biggest secret in Smurf history!]]></synopsis>
+	</about>
+
+	<!-- MEET THE CHARACTERS SECTION -->
+	<meet>
+		<label><![CDATA[MEET THE CHARACTERS]]></label>
+		<castBtn><![CDATA[CAST & CREW]]></castBtn>
+		<smurfette>
+			<header>SMURFETTE</header>
+			<subHeader>Voice of Demi Lovato</subHeader>
+			<profile>Smurfette may be small and blue but this feisty girl really packs a punch. She is strong-willed and independent, energetic and curious. But as the only girl in a village full of boys where every Smurf’s name indicates their place in the world— Baker Smurf bakes, Jokey Smurf jokes and Nosey Smurf is always up in every other Smurf’s business— Smurfette’s name doesn’t indicate much of anything.  Consequently, Smurfette has started to wonder what her purpose is. What is an “ette” anyway? A journey through the Forbidden Forest to find a Lost Village of Smurfs becomes way more than just an adventure. It’s a journey of friendship and self-discovery, and along the way Smurfette finds the answer she’s been looking for…  A “Smurfette” is a girl who is capable of just about anything she puts her mind to.</profile>
+		</smurfette>
+		<hefty>
+			<header>HEFTY</header>
+			<subHeader>Voice of Joe Manganiello</subHeader>
+			<profile>Hefty is brave, strong, brawny and very protective of his Smurf friends. But don’t be fooled by his excessive masculinity; he is also extremely sweet and sensitive and wears his heart on his sleeve, both figuratively and literally.</profile>
+		</hefty>
+		<brainy>
+			<header>BRAINY</header>
+			<subHeader>Voice of Danny Pudi</subHeader>
+			<profile>You’d be hard pressed to find another Smurf whose name indicates his place more than Brainy Smurf… He is super smart and can always be found with his nose in a book or in his lab cooking up some cool new invention. He’s also quite the journeyman, thanks in part to his time as a young Smurf scout, during which he earned a plethora (his word) of merit badges. Just don’t expect etiquette to be in Brainy’s repertoire—he never earned his "manners badge."</profile>
+		</brainy>
+		<clumsy>
+			<header>CLUMSY</header>
+			<subHeader>Voice of Jack McBrayer</subHeader>
+			<profile>Clumsy is ALL heart and ALL thumbs. He’s always eager to lend a helping hand or pitch in however he can, but most often he makes a situation worse. Luckily, his good intentions and wide-eyed wonder make whatever mess he’s made utterly forgivable, and in the end he always impresses us all.</profile>
+		</clumsy>
+		<papasmurf>
+			<header>PAPA SMURF</header>
+			<subHeader>Voice of Mandy Patinkin</subHeader>
+			<profile>Kind and warm Papa Smurf’s number one concern is the safety and wellbeing of the Smurfs and his beloved Smurf Village. As the leader of the Smurfs, and the patriarch of the village, he has tried to maintain a certain level of control and order, but if he thought overseeing 99 Smurf boys and one little Smurf girl was hard, he had another thing coming when they reached their teenage years.</profile>
+		</papasmurf>
+		<gargamel>
+			<header>GARGAMEL</header>
+			<subHeader>Voice of Rainn Wilson</subHeader>
+			<profile>Equal parts dangerous and idiotic, Gargamel is the grandiose, self-important, iconic foil of the Smurfs. All he craves in this life is to be celebrated and revered as the most powerful wizard in the world, except he has exceptionally poor execution of all his wizard plans. His quest for infinite power, paired with a pretty substantial receding hairline makes him a comical villain, but also a dreaded adversary for our Smurfs.</profile>
+		</gargamel>
+
+	</meet>
+
+	<!-- CAST SECTION -->
+	<cast>
+		<label><![CDATA[CAST & CREW]]></label>
+		<meetBtn><![CDATA[MEET THE CHARACTERS]]></meetBtn>
+		<names>
+			<item>
+				<name><![CDATA[]]></name>
+				<role><![CDATA[<u>CAST:</u>]]></role>
+			</item>
+			<item>
+				<name><![CDATA[ DEMI LOVATO ]]></name>
+				<role><![CDATA[ (SMURFETTE) ]]></role>
+			</item>
+			<item>
+				<name><![CDATA[ RAINN WILSON ]]></name>
+				<role><![CDATA[ (GARGAMEL) ]]></role>
+			</item>
+			<item>
+				<name><![CDATA[ JOE MANGANIELLO ]]></name>
+				<role><![CDATA[ (HEFTY) ]]></role>
+			</item>
+			<item>
+				<name><![CDATA[ JACK McBRAYER ]]></name>
+				<role><![CDATA[ (CLUMSY) ]]></role>
+			</item>
+			<item>
+				<name><![CDATA[ DANNY PUDI ]]></name>
+				<role><![CDATA[ (BRAINY) ]]></role>
+			</item>
+			<item>
+				<name><![CDATA[ with MANDY PATINKIN ]]></name>
+				<role><![CDATA[ (PAPA SMURF) ]]></role>
+			</item>
+
+			<item>
+				<name><![CDATA[]]></name>
+				<role><![CDATA[]]></role>
+			</item>
+			<item>
+				<name><![CDATA[]]></name>
+				<role><![CDATA[<u>DIRECTOR:</u>]]></role>
+			</item>
+			<item>
+				<name><![CDATA[KELLY ASBURY]]></name>
+				<role><![CDATA[]]></role>
+			</item>
+
+			<item>
+				<name><![CDATA[]]></name>
+				<role><![CDATA[]]></role>
+			</item>
+			<item>
+				<name><![CDATA[]]></name>
+				<role><![CDATA[<u>WRITTEN BY:</u>]]></role>
+			</item>
+			<item>
+				<name><![CDATA[STACEY HARMAN]]></name>
+				<role><![CDATA[]]></role>
+			</item>
+			<item>
+				<name><![CDATA[and]]></name>
+				<role><![CDATA[]]></role>
+			</item>
+			<item>
+				<name><![CDATA[PAMELA RIBON]]></name>
+				<role><![CDATA[]]></role>
+			</item>
+			<item>
+				<name><![CDATA[]]></name>
+				<role><![CDATA[]]></role>
+			</item>
+			<item>
+				<name><![CDATA[BASED ON THE CHARACTERS AND WORKS OF PEYO]]></name>
+				<role><![CDATA[]]></role>
+			</item>
+
+			<item>
+				<name><![CDATA[]]></name>
+				<role><![CDATA[]]></role>
+			</item>
+			<item>
+				<name><![CDATA[]]></name>
+				<role><![CDATA[<u>PRODUCER:</u>]]></role>
+			</item>
+			<item>
+				<name><![CDATA[JORDAN KERNER]]></name>
+				<role><![CDATA[]]></role>
+			</item>
+
+			<item>
+				<name><![CDATA[]]></name>
+				<role><![CDATA[]]></role>
+			</item>
+			<item>
+				<name><![CDATA[]]></name>
+				<role><![CDATA[<u>CO-PRODUCER:</u>]]></role>
+			</item>
+			<item>
+				<name><![CDATA[MARY ELLEN BAUDER ANDREWS]]></name>
+				<role><![CDATA[]]></role>
+			</item>
+
+			<item>
+				<name><![CDATA[]]></name>
+				<role><![CDATA[]]></role>
+			</item>
+			<item>
+				<name><![CDATA[]]></name>
+				<role><![CDATA[<u>EXECUTIVE PRODUCERS:</u>]]></role>
+			</item>
+			<item>
+				<name><![CDATA[RAJA GOSNELL]]></name>
+				<role><![CDATA[]]></role>
+			</item>
+			<item>
+				<name><![CDATA[BEN WAISBREN]]></name>
+				<role><![CDATA[]]></role>
+			</item>
+
+			<item>
+				<name><![CDATA[]]></name>
+				<role><![CDATA[]]></role>
+			</item>
+			<item>
+				<name><![CDATA[]]></name>
+				<role><![CDATA[<u>CO-EXECUTIVE PRODUCER:</u>]]></role>
+			</item>
+			<item>
+				<name><![CDATA[BEN HABER]]></name>
+				<role><![CDATA[]]></role>
+			</item>
+
+			<item>
+				<name><![CDATA[]]></name>
+				<role><![CDATA[]]></role>
+			</item>
+			<item>
+				<name><![CDATA[]]></name>
+				<role><![CDATA[<u>VISUAL EFFECTS PRODUCER:</u>]]></role>
+			</item>
+			<item>
+				<name><![CDATA[MANDY TANKENSON]]></name>
+				<role><![CDATA[]]></role>
+			</item>
+
+			<item>
+				<name><![CDATA[]]></name>
+				<role><![CDATA[]]></role>
+			</item>
+			<item>
+				<name><![CDATA[]]></name>
+				<role><![CDATA[<u>MUSIC BY:</u>]]></role>
+			</item>
+			<item>
+				<name><![CDATA[CHRISTOPHER LENNERTZ]]></name>
+				<role><![CDATA[]]></role>
+			</item>
+
+			<item>
+				<name><![CDATA[]]></name>
+				<role><![CDATA[]]></role>
+			</item>
+			<item>
+				<name><![CDATA[]]></name>
+				<role><![CDATA[<u>EDITOR:</u>]]></role>
+			</item>
+			<item>
+				<name><![CDATA[BRET MARNELL]]></name>
+				<role><![CDATA[]]></role>
+			</item>
+
+			<item>
+				<name><![CDATA[]]></name>
+				<role><![CDATA[]]></role>
+			</item>
+			<item>
+				<name><![CDATA[]]></name>
+				<role><![CDATA[<u>PRODUCTION DESIGNER:</u>]]></role>
+			</item>
+			<item>
+				<name><![CDATA[NOELLE TRIAUREAU]]></name>
+				<role><![CDATA[]]></role>
+			</item>
+
+			<item>
+				<name><![CDATA[]]></name>
+				<role><![CDATA[]]></role>
+			</item>
+			<item>
+				<name><![CDATA[]]></name>
+				<role><![CDATA[<u>VISUAL EFFECTS SUPERVISOR:</u>]]></role>
+			</item>
+			<item>
+				<name><![CDATA[MIKE FORD]]></name>
+				<role><![CDATA[]]></role>
+			</item>
+
+			<item>
+				<name><![CDATA[]]></name>
+				<role><![CDATA[]]></role>
+			</item>
+			<item>
+				<name><![CDATA[]]></name>
+				<role><![CDATA[<u>CHARACTER DESIGNER:</u>]]></role>
+			</item>
+			<item>
+				<name><![CDATA[PATRICK MATE]]></name>
+				<role><![CDATA[]]></role>
+			</item>
+
+			<item>
+				<name><![CDATA[]]></name>
+				<role><![CDATA[]]></role>
+			</item>
+			<item>
+				<name><![CDATA[]]></name>
+				<role><![CDATA[<u>HEAD OF STORY:</u>]]></role>
+			</item>
+			<item>
+				<name><![CDATA[BRANDON JEFFORDS]]></name>
+				<role><![CDATA[]]></role>
+			</item>
+
+			<item>
+				<name><![CDATA[]]></name>
+				<role><![CDATA[]]></role>
+			</item>
+			<item>
+				<name><![CDATA[]]></name>
+				<role><![CDATA[<u>HEAD OF LAYOUT:</u>]]></role>
+			</item>
+			<item>
+				<name><![CDATA[DAVE MOREHEAD]]></name>
+				<role><![CDATA[]]></role>
+			</item>
+
+			<item>
+				<name><![CDATA[]]></name>
+				<role><![CDATA[]]></role>
+			</item>
+			<item>
+				<name><![CDATA[]]></name>
+				<role><![CDATA[<u>SENIOR ANIMATION SUPERVISOR:</u>]]></role>
+			</item>
+			<item>
+				<name><![CDATA[ALAN HAWKINS]]></name>
+				<role><![CDATA[]]></role>
+			</item>
+
+			<item>
+				<name><![CDATA[]]></name>
+				<role><![CDATA[]]></role>
+			</item>
+			<item>
+				<name><![CDATA[]]></name>
+				<role><![CDATA[<u>DIGITAL PRODUCER:</u>]]></role>
+			</item>
+			<item>
+				<name><![CDATA[LISA BECHARD]]></name>
+				<role><![CDATA[]]></role>
+			</item>
+
+			<item>
+				<name><![CDATA[]]></name>
+				<role><![CDATA[]]></role>
+			</item>
+			<item>
+				<name><![CDATA[]]></name>
+				<role><![CDATA[<u>PRODUCTION MANAGER:</u>]]></role>
+			</item>
+			<item>
+				<name><![CDATA[THERESA BENTZ]]></name>
+				<role><![CDATA[]]></role>
+			</item>
+
+			<item>
+				<name><![CDATA[]]></name>
+				<role><![CDATA[]]></role>
+			</item>
+			<item>
+				<name><![CDATA[]]></name>
+				<role><![CDATA[<u>IMAGERY AND ANIMATION BY:</u>]]></role>
+			</item>
+			<item>
+				<name><![CDATA[SONY PICTURES IMAGEWORKS INC.]]></name>
+				<role><![CDATA[]]></role>
+			</item>
+		</names>
+	</cast>
+
+	<!-- REGISTER FOR UPDATES  -->
+	<register>
+		<label><![CDATA[REGISTER FOR UPDATES]]></label>
+	</register>
+
+	<!-- VIDEO SECTION -->
+	<video>
+		<label><![CDATA[WATCH TRAILER]]></label>
+		<trailerID><![CDATA[qHX6iRTF7nQ]]></trailerID>
+		<playlistID><![CDATA[]]></playlistID>
+		<getTicketsURL><![CDATA[]]></getTicketsURL>
+	</video>
+
+
+	<!-- AGE GATE -->
+	<agegate>
+		<modalMessage><![CDATA[Please enter your date of birth.]]></modalMessage>
+		<modalSubmit><![CDATA[SUBMIT]]></modalSubmit>
+		<modalCancel><![CDATA[CANCEL]]></modalCancel>
+		<underageMessage><![CDATA[We're sorry. You must be at least ##age## years of age to continue.]]></underageMessage>
+		<modalMonthError><![CDATA[Please select a month]]></modalMonthError>
+		<modalDayError><![CDATA[Please select a day]]></modalDayError>
+		<modalYearError><![CDATA[Please select a year]]></modalYearError>
+	</agegate>
+
+	<!-- GALLERY SECTION -->
+	<gallery>
+		<label><![CDATA[GALLERY]]></label>
+		<item>
+			<caption><![CDATA[IMAGE - 1]]></caption>
+			<img><![CDATA[images/gallery/img1.jpg]]></img>
+		</item>
+		<item>
+			<caption><![CDATA[IMAGE - 2]]></caption>
+			<img><![CDATA[images/gallery/img2.jpg]]></img>
+		</item>
+		<item>
+			<caption><![CDATA[IMAGE - 3]]></caption>
+			<img><![CDATA[images/gallery/img3.jpg]]></img>
+		</item>
+	</gallery>
+
+
+
+	<!-- NO SUPPORT SCREEN -->
+	<noSupport>
+		<message><![CDATA[PLEASE UPGRADE YOUR BROWSER TO EXPLORE<br />THE COMPLETE WEB EXPERIENCE.]]></message>
+	</noSupport>
+
+</xml>
