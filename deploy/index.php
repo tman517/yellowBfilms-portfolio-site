@@ -45,7 +45,10 @@ require_once 'includes/config.php';
 		<div id="desktop_wrapper">
 			<div class="bg"></div>
 			<div class="home_wrapper">
-				<a class="contactBtn" href="mailto:bongfilms@yahoo.com">CONTACT&nbsp;&nbsp;<span class="fa fa-envelope"></span><div class="email">bongfilms@yahoo.com</div></a>
+				<a class="contactBtn" href="mailto:bongfilms@yahoo.com">CONTACT&nbsp;&nbsp;<span class="fa fa-envelope"></span>
+					<div class="email">bongfilms@yahoo.com</div>
+					<div class="phone">(626) 555-5555</div>
+				</a>
 				<div class="copyright">Copyright &copy; 2016. All rights reserved.&nbsp;&nbsp;&nbsp;</div>
 				<div class="logo_wrapper">
 					<div class="logoLeft"></div>

@@ -204,8 +204,24 @@
 			font-size:14px;
 			font-family: 'Rubik', sans-serif;
 			font-weight:500;
-			background-color:#000000;
-			padding:5px 15px;
+			position:absolute;
+			padding:5px 0px;
+			top:0px;
+			right:0px;
+			opacity:0;
+			transition:300ms;
+			-webkit-transition:300ms;
+			color:#e2e2e2;
+			white-space: nowrap;
+			pointer-events:none;
+		}
+
+		.phone {
+			width:auto;
+			height:auto;
+			font-size:14px;
+			font-family: 'Rubik', sans-serif;
+			font-weight:500;
 			position:absolute;
 			top:0px;
 			right:0px;
@@ -213,7 +229,10 @@
 			transition:300ms;
 			-webkit-transition:300ms;
 			color:#e2e2e2;
+			white-space: nowrap;
+			pointer-events:none;
 		}
+
 	}
 
 	.contactBtn:hover {
@@ -222,6 +241,11 @@
 
 		.email {
 			right:150px;
+			opacity:1;
+		}
+
+		.phone {
+			top:40px;
 			opacity:1;
 		}
 	}
