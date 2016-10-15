@@ -43,13 +43,13 @@ require_once 'includes/config.php';
 
 		<!-- DESKTOP WRAPPER -->
 		<div id="desktop_wrapper">
-			<div class="bg"></div>
+			<div class="bg"><div class="dot_repeater"></div></div>
 			<div class="home_wrapper">
 				<a class="contactBtn" href="mailto:bongfilms@yahoo.com">CONTACT&nbsp;&nbsp;<span class="fa fa-envelope"></span>
 					<div class="email">bongfilms@yahoo.com</div>
 					<div class="phone">(626) 555-5555</div>
 				</a>
-				<div class="copyright">Copyright &copy; 2016. All rights reserved.&nbsp;&nbsp;&nbsp;</div>
+				<div class="copyright">&copy; Copyright 2016 YellowBFilms. All rights reserved.&nbsp;&nbsp;&nbsp;</div>
 				<div class="logo_wrapper">
 					<div class="logoLeft"></div>
 					<div class="logoCenter"></div>
@@ -90,7 +90,7 @@ require_once 'includes/config.php';
 
 		<!-- PRELOADER WRAPPER -->
 		<div id="preloader_wrapper">
-			<div class="bg"></div>
+			<div class="bg"><div class="dot_repeater"></div></div>
 			<div class="loaderBar"></div>
 			<div class="percentage">0%</div>
 		</div>

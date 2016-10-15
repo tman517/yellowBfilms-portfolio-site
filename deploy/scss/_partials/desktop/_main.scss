@@ -10,10 +10,11 @@
 	overflow:hidden;
 	z-index:1000;
 
+
 	.bg {
 		width:100%;
 		height:100%;
-		background-image:url("../images/bg4.jpg");
+		background-image:url("../images/bg10.jpg");
 		background-repeat:no-repeat;
 		background-position:center;
 		background-size:cover;
@@ -22,9 +23,19 @@
 		transition:300ms;
 		-webkit-transition:700ms;
 		opacity:0;
+
+			.dot_repeater {
+			width:100%;
+			height:100%;
+			background-image:url("../images/dot_repeater.png");
+			background-repeat:repeat;
+			position:absolute;
+			top:0px;
+			left:0px;
+		}
 	}
 	
 	.bg.show{
-		opacity:1;
+		opacity:.4;
 	}
 }

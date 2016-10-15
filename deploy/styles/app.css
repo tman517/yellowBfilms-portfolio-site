@@ -57,12 +57,20 @@ div, ul {
   #preloader_wrapper .bg {
     width: 100%;
     height: 100%;
-    background-image: url("../images/preloader_bg.jpg");
+    /*background-image:url("../images/preloader_bg.jpg");*/
     background-size: cover;
     background-repeat: none;
     background-position: center;
     transition: 500ms;
     -webkit-transition: 500ms; }
+    #preloader_wrapper .bg .dot_repeater {
+      width: 100%;
+      height: 100%;
+      background-image: url("../images/dot_repeater.png");
+      background-repeat: repeat;
+      position: absolute;
+      top: 0px;
+      left: 0px; }
   #preloader_wrapper .bg.hide {
     opacity: 0; }
   #preloader_wrapper .loaderBar {
@@ -100,7 +108,7 @@ div, ul {
   #desktop_wrapper .bg {
     width: 100%;
     height: 100%;
-    background-image: url("../images/bg4.jpg");
+    background-image: url("../images/bg10.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -109,8 +117,16 @@ div, ul {
     transition: 300ms;
     -webkit-transition: 700ms;
     opacity: 0; }
+    #desktop_wrapper .bg .dot_repeater {
+      width: 100%;
+      height: 100%;
+      background-image: url("../images/dot_repeater.png");
+      background-repeat: repeat;
+      position: absolute;
+      top: 0px;
+      left: 0px; }
   #desktop_wrapper .bg.show {
-    opacity: 1; }
+    opacity: .4; }
 
 #desktop_wrapper .home_wrapper {
   width: 100%;
@@ -176,7 +192,7 @@ div, ul {
       height: auto;
       position: absolute; }
       #desktop_wrapper .home_wrapper .content_wrapper .category_wrapper .thumb {
-        border: 4px solid #000000;
+        border: 4px solid #3C3C32;
         border-radius: 300px;
         position: absolute;
         top: 0px;
@@ -190,7 +206,10 @@ div, ul {
         opacity: 0;
         transition: 500ms;
         -webkit-transition: 500ms;
-        transform: translateY(-20px); }
+        transform: translateY(-20px);
+        -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75); }
         #desktop_wrapper .home_wrapper .content_wrapper .category_wrapper .thumb .label {
           width: 100%;
           height: 27%;
@@ -212,7 +231,7 @@ div, ul {
         opacity: 1;
         transform: translateY(0px); }
       #desktop_wrapper .home_wrapper .content_wrapper .category_wrapper .thumb:hover {
-        border: 4px solid #ffffff;
+        border: 4px solid #ffee00;
         transform: scale(1.1); }
         #desktop_wrapper .home_wrapper .content_wrapper .category_wrapper .thumb:hover .label {
           height: 33%;
@@ -255,49 +274,53 @@ div, ul {
     letter-spacing: 1px;
     display: block;
     position: absolute;
+    background-color: #ffffff;
     top: 10px;
     right: 10px;
     z-index: 4000;
     text-decoration: none;
-    color: #ffffff;
-    border: 2px solid #ffffff;
+    color: #000000;
+    border: 2px solid #000000;
+    border-radius: 7px;
     padding: 5px 15px;
     transition: 300ms;
     -webkit-transition: 300ms; }
     #desktop_wrapper .home_wrapper .contactBtn .email {
       width: auto;
       height: auto;
-      font-size: 14px;
+      font-size: 12px;
       font-family: 'Rubik', sans-serif;
-      font-weight: 500;
+      font-weight: 300;
       position: absolute;
       padding: 5px 0px;
       top: 0px;
-      right: 0px;
+      right: 130px;
       opacity: 0;
       transition: 300ms;
       -webkit-transition: 300ms;
-      color: #e2e2e2;
+      color: #3C3C32;
       white-space: nowrap;
       pointer-events: none; }
     #desktop_wrapper .home_wrapper .contactBtn .phone {
       width: auto;
       height: auto;
-      font-size: 14px;
+      font-size: 12px;
       font-family: 'Rubik', sans-serif;
-      font-weight: 500;
+      font-weight: 300;
       position: absolute;
-      top: 0px;
+      top: 30px;
       right: 0px;
       opacity: 0;
       transition: 300ms;
       -webkit-transition: 300ms;
-      color: #e2e2e2;
+      color: #3C3C32;
       white-space: nowrap;
       pointer-events: none; }
   #desktop_wrapper .home_wrapper .contactBtn:hover {
     background-color: #ffee00;
-    color: #000000; }
+    color: #3C3C32;
+    border: 2px solid #3C3C32;
+    transform: scale(1.05); }
     #desktop_wrapper .home_wrapper .contactBtn:hover .email {
       right: 150px;
       opacity: 1; }
@@ -312,7 +335,7 @@ div, ul {
     font-size: 10px;
     font-family: 'Rubik', sans-serif;
     font-weight: 300;
-    color: #a2a2a2;
+    color: #3C3C32;
     line-height: 20px; }
 
 #mobile_wrapper {

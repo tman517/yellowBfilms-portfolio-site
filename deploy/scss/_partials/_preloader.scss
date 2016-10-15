@@ -14,12 +14,22 @@
 	.bg {
 		width:100%;
 		height:100%;
-		background-image:url("../images/preloader_bg.jpg");
+		/*background-image:url("../images/preloader_bg.jpg");*/
 		background-size:cover;
 		background-repeat:none;
 		background-position:center;
 		transition:500ms;
 		-webkit-transition:500ms;
+
+		.dot_repeater {
+			width:100%;
+			height:100%;
+			background-image:url("../images/dot_repeater.png");
+			background-repeat:repeat;
+			position:absolute;
+			top:0px;
+			left:0px;
+		}
 	}
 
 	.bg.hide{
