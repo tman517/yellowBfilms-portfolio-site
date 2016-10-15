@@ -24,10 +24,10 @@ div, ul {
   height: 32px;
   text-align: center;
   font-size: 23px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Rubik', sans-serif;
   font-weight: bold;
   border-radius: 17px;
-  color: #0f9cea;
+  color: #000000;
   background-color: #ffffff;
   background-image: none;
   text-decoration: none;
@@ -41,7 +41,7 @@ div, ul {
   transition: 300ms; }
   .closeBtn:hover {
     color: #ffffff;
-    background-color: #0f9cea;
+    background-color: #ffee00;
     transform: scale(1.2) rotateZ(360deg); }
 
 #preloader_wrapper {
@@ -57,12 +57,13 @@ div, ul {
   #preloader_wrapper .bg {
     width: 100%;
     height: 100%;
-    /*background-image:url("../images/preloader_bg.jpg");*/
+    background-image: url("../images/preloader_bg.jpg");
     background-size: cover;
     background-repeat: none;
     background-position: center;
     transition: 500ms;
-    -webkit-transition: 500ms; }
+    -webkit-transition: 500ms;
+    opacity: .5; }
     #preloader_wrapper .bg .dot_repeater {
       width: 100%;
       height: 100%;
@@ -106,17 +107,18 @@ div, ul {
   overflow: hidden;
   z-index: 1000; }
   #desktop_wrapper .bg {
-    width: 100%;
-    height: 100%;
+    width: 110%;
+    height: 110%;
     background-image: url("../images/bg10.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     z-index: 0;
     position: absolute;
-    transition: 300ms;
-    -webkit-transition: 700ms;
-    opacity: 0; }
+    transition: 2500ms;
+    -webkit-transition: 2500ms;
+    opacity: 0;
+    transform: rotateZ(5deg) translate(-4%, -2%); }
     #desktop_wrapper .bg .dot_repeater {
       width: 100%;
       height: 100%;
@@ -126,7 +128,22 @@ div, ul {
       top: 0px;
       left: 0px; }
   #desktop_wrapper .bg.show {
-    opacity: .4; }
+    opacity: 1;
+    transform: rotateZ(0deg) translate(-4%, -2%); }
+  #desktop_wrapper .overlay {
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 3000;
+    opacity: .92;
+    transition: 300ms;
+    -webkit-transition: 300ms;
+    transform: scale(0, 1); }
+  #desktop_wrapper .overlay.show {
+    transform: scale(1, 1); }
 
 #desktop_wrapper .home_wrapper {
   width: 100%;
@@ -337,6 +354,23 @@ div, ul {
     font-weight: 300;
     color: #3C3C32;
     line-height: 20px; }
+
+#desktop_wrapper .videoGallery_wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 5000;
+  display: none;
+  opacity: 0;
+  transition: 300ms;
+  -webkit-transition: 300ms; }
+  #desktop_wrapper .videoGallery_wrapper.show {
+    opacity: 1; }
+  #desktop_wrapper .videoGallery_wrapper .closeBtn {
+    top: 15px;
+    right: 15px; }
 
 #mobile_wrapper {
   width: 100%;

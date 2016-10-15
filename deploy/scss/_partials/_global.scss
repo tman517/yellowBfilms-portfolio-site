@@ -36,10 +36,10 @@ div, ul {
 	height:32px;
 	text-align:center;
 	font-size:23px;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Rubik', sans-serif;
 	font-weight:bold;
 	border-radius:17px;
-	color:#0f9cea;
+	color:#000000;
 	background-color:#ffffff;
 	background-image:none;
 	text-decoration:none;
@@ -54,7 +54,7 @@ div, ul {
 
 	&:hover {
 		color:#ffffff;
-		background-color:#0f9cea;
+		background-color:#ffee00;
 		transform:scale(1.2) rotateZ(360deg);
 	}
 }

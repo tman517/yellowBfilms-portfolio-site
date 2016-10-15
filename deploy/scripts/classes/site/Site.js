@@ -96,6 +96,7 @@ function Site(){
 
 	function preloaderCompleteHandler(){		
 		initHome();
+		initVideoGallery();
 		initLayoutManager();
 
 		$("#preloader_wrapper .percentage").stop(true, false).animate({"opacity":0}, function(){
@@ -172,6 +173,10 @@ function Site(){
 
 	function initHome(){
 		Global.views.home = new Home();
+	}
+
+	function initVideoGallery(){
+		Global.views.videoGallery = new VideoGallery();
 	}
 
 

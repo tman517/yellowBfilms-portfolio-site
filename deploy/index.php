@@ -79,6 +79,12 @@ require_once 'includes/config.php';
 				</div>
 			</div>
 
+			<div class="overlay"></div>
+
+			<div class="videoGallery_wrapper">
+				<div class="closeBtn">X</div>
+			</div>
+
 		</div>
 
 		<!-- MOBILE WRAPPER -->
