@@ -30,6 +30,8 @@ require_once 'includes/config.php';
 
 		<!-- styles -->
 		<link rel="stylesheet" type="text/css" href="scripts/libs/css/jquery.fancybox.css">
+		<link rel="stylesheet" type="text/css" href="scripts/libs/css/slick.css">
+		<link rel="stylesheet" type="text/css" href="scripts/libs/css/slick-theme.css">
 		<link rel="stylesheet" type="text/css" href="styles/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="styles/app.css">
 
@@ -83,6 +85,13 @@ require_once 'includes/config.php';
 
 			<div class="videoGallery_wrapper">
 				<div class="closeBtn">X</div>
+				<div class="video_container">
+					<iframe id="vimeoIframe" src="" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+				</div>
+				<div class="thumb_container">
+					<div class="thumbs">
+					</div>
+				</div>
 			</div>
 
 		</div>

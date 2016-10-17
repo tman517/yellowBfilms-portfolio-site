@@ -53,8 +53,6 @@ div, ul {
 	transition:300ms;
 
 	&:hover {
-		color:#ffffff;
-		background-color:#ffee00;
 		transform:scale(1.2) rotateZ(360deg);
 	}
 }
