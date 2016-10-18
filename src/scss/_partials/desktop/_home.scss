@@ -81,7 +81,7 @@
 			position:absolute;
 
 			.thumb {
-				border:4px solid #3C3C32;
+				border:4px solid #ffffff;
 				border-radius:300px;
 				position:absolute;
 				top:0px;
@@ -141,8 +141,8 @@
 				left:5%;
 
 				.thumb{
-					width:400px;
-					height:400px;
+					width:420px;
+					height:420px;
 					background-image:url("../images/cars_thumb.jpg");
 				}
 			}
@@ -152,8 +152,8 @@
 				left:67%;
 
 				.thumb{
-					width:280px;
-					height:280px;
+					width:300px;
+					height:300px;
 					background-image:url("../images/commercial_thumb.jpg");
 				}
 			}
@@ -163,8 +163,8 @@
 				left:30%;
 
 				.thumb{
-					width:260px;
-					height:260px;
+					width:280px;
+					height:280px;
 					background-image:url("../images/fashion_thumb.jpg");
 				}
 			}
@@ -174,9 +174,55 @@
 				left:68%;
 
 				.thumb{
-					width:220px;
-					height:220px;
+					width:240px;
+					height:240px;
 					background-image:url("../images/reality_thumb.jpg");
+				}
+			}
+
+			@media (max-width:1350px){
+				&.cars {
+					top:4%;
+					left:5%;
+
+					.thumb{
+						width:280px;
+						height:280px;
+						background-image:url("../images/cars_thumb.jpg");
+					}
+				}
+
+				&.commercial {
+					top:10%;
+					left:67%;
+
+					.thumb{
+						width:220px;
+						height:220px;
+						background-image:url("../images/commercial_thumb.jpg");
+					}
+				}
+
+				&.fashion {
+					top:64%;
+					left:22%;
+
+					.thumb{
+						width:210px;
+						height:210px;
+						background-image:url("../images/fashion_thumb.jpg");
+					}
+				}
+
+				&.reality {
+					top:55%;
+					left:68%;
+
+					.thumb{
+						width:180px;
+						height:180px;
+						background-image:url("../images/reality_thumb.jpg");
+					}
 				}
 			}
 		}

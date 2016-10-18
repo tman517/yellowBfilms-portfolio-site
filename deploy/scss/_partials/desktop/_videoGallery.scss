@@ -56,7 +56,10 @@
 				position:relative;
 				display:block;
 				cursor:pointer;
-				opacity:.5;
+				opacity:.3;
+				transition:300ms;
+				-webkit-transition:300ms;
+
 
 				&:hover {
 					opacity:1;

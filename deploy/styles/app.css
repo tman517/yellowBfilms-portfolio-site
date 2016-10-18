@@ -107,7 +107,7 @@ div, ul {
   #desktop_wrapper .bg {
     width: 110%;
     height: 110%;
-    background-image: url("../images/bg10.jpg");
+    background-image: url("../images/bg11.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -207,7 +207,7 @@ div, ul {
       height: auto;
       position: absolute; }
       #desktop_wrapper .home_wrapper .content_wrapper .category_wrapper .thumb {
-        border: 4px solid #3C3C32;
+        border: 4px solid #ffffff;
         border-radius: 300px;
         position: absolute;
         top: 0px;
@@ -256,30 +256,59 @@ div, ul {
         top: 4%;
         left: 5%; }
         #desktop_wrapper .home_wrapper .content_wrapper .category_wrapper.cars .thumb {
-          width: 400px;
-          height: 400px;
+          width: 420px;
+          height: 420px;
           background-image: url("../images/cars_thumb.jpg"); }
       #desktop_wrapper .home_wrapper .content_wrapper .category_wrapper.commercial {
         top: 10%;
         left: 67%; }
         #desktop_wrapper .home_wrapper .content_wrapper .category_wrapper.commercial .thumb {
-          width: 280px;
-          height: 280px;
+          width: 300px;
+          height: 300px;
           background-image: url("../images/commercial_thumb.jpg"); }
       #desktop_wrapper .home_wrapper .content_wrapper .category_wrapper.fashion {
         top: 67%;
         left: 30%; }
         #desktop_wrapper .home_wrapper .content_wrapper .category_wrapper.fashion .thumb {
-          width: 260px;
-          height: 260px;
+          width: 280px;
+          height: 280px;
           background-image: url("../images/fashion_thumb.jpg"); }
       #desktop_wrapper .home_wrapper .content_wrapper .category_wrapper.reality {
         top: 55%;
         left: 68%; }
         #desktop_wrapper .home_wrapper .content_wrapper .category_wrapper.reality .thumb {
-          width: 220px;
-          height: 220px;
+          width: 240px;
+          height: 240px;
           background-image: url("../images/reality_thumb.jpg"); }
+      @media (max-width: 1350px) {
+        #desktop_wrapper .home_wrapper .content_wrapper .category_wrapper.cars {
+          top: 4%;
+          left: 5%; }
+          #desktop_wrapper .home_wrapper .content_wrapper .category_wrapper.cars .thumb {
+            width: 280px;
+            height: 280px;
+            background-image: url("../images/cars_thumb.jpg"); }
+        #desktop_wrapper .home_wrapper .content_wrapper .category_wrapper.commercial {
+          top: 10%;
+          left: 67%; }
+          #desktop_wrapper .home_wrapper .content_wrapper .category_wrapper.commercial .thumb {
+            width: 220px;
+            height: 220px;
+            background-image: url("../images/commercial_thumb.jpg"); }
+        #desktop_wrapper .home_wrapper .content_wrapper .category_wrapper.fashion {
+          top: 64%;
+          left: 22%; }
+          #desktop_wrapper .home_wrapper .content_wrapper .category_wrapper.fashion .thumb {
+            width: 210px;
+            height: 210px;
+            background-image: url("../images/fashion_thumb.jpg"); }
+        #desktop_wrapper .home_wrapper .content_wrapper .category_wrapper.reality {
+          top: 55%;
+          left: 68%; }
+          #desktop_wrapper .home_wrapper .content_wrapper .category_wrapper.reality .thumb {
+            width: 180px;
+            height: 180px;
+            background-image: url("../images/reality_thumb.jpg"); } }
   #desktop_wrapper .home_wrapper .contactBtn {
     width: auto;
     height: auto;
@@ -398,7 +427,9 @@ div, ul {
         position: relative;
         display: block;
         cursor: pointer;
-        opacity: .5; }
+        opacity: .3;
+        transition: 300ms;
+        -webkit-transition: 300ms; }
         #desktop_wrapper .videoGallery_wrapper .thumb_container .thumbs .thumb:hover {
           opacity: 1; }
       #desktop_wrapper .videoGallery_wrapper .thumb_container .thumbs .thumb.selected {

@@ -45,7 +45,7 @@ require_once 'includes/config.php';
 
 		<!-- DESKTOP WRAPPER -->
 		<div id="desktop_wrapper">
-			<div class="bg"><div class="dot_repeater"></div></div>
+			<div class="bg"></div>
 			<div class="home_wrapper">
 				<a class="contactBtn" href="mailto:bongfilms@yahoo.com">CONTACT&nbsp;&nbsp;<span class="fa fa-envelope"></span>
 					<div class="email">bongfilms@yahoo.com</div>
@@ -105,7 +105,7 @@ require_once 'includes/config.php';
 
 		<!-- PRELOADER WRAPPER -->
 		<div id="preloader_wrapper">
-			<div class="bg"><div class="dot_repeater"></div></div>
+			<div class="bg"></div>
 			<div class="loaderBar"></div>
 			<div class="percentage">0%</div>
 		</div>
