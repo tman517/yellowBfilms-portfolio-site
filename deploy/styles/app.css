@@ -126,7 +126,7 @@ div, ul {
       top: 0px;
       left: 0px; }
   #desktop_wrapper .bg.show {
-    opacity: 1;
+    opacity: .6;
     transform: rotateZ(0deg) translate(-4%, -2%); }
   #desktop_wrapper .overlay {
     width: 100%;
@@ -230,7 +230,8 @@ div, ul {
           height: 27%;
           text-align: center;
           color: #ffffff;
-          background-color: rgba(0, 0, 0, 0.4);
+          z-index: 2000;
+          background-color: rgba(0, 0, 0, 0.6);
           position: absolute;
           bottom: 0px;
           left: 0px;
@@ -242,6 +243,18 @@ div, ul {
           text-indent: 8px;
           transition: 500ms;
           -webkit-transition: 500ms; }
+        #desktop_wrapper .home_wrapper .content_wrapper .category_wrapper .thumb img {
+          width: auto;
+          height: 100%;
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          opacity: 0;
+          transition: 1000ms;
+          -webkit-transition: 1000ms;
+          z-index: 1000; }
+          #desktop_wrapper .home_wrapper .content_wrapper .category_wrapper .thumb img.show {
+            opacity: 1; }
       #desktop_wrapper .home_wrapper .content_wrapper .category_wrapper .thumb.show {
         opacity: 1;
         transform: translateY(0px); }
@@ -257,58 +270,50 @@ div, ul {
         left: 5%; }
         #desktop_wrapper .home_wrapper .content_wrapper .category_wrapper.cars .thumb {
           width: 420px;
-          height: 420px;
-          background-image: url("../images/cars_thumb.jpg"); }
+          height: 420px; }
       #desktop_wrapper .home_wrapper .content_wrapper .category_wrapper.commercial {
         top: 10%;
         left: 67%; }
         #desktop_wrapper .home_wrapper .content_wrapper .category_wrapper.commercial .thumb {
           width: 300px;
-          height: 300px;
-          background-image: url("../images/commercial_thumb.jpg"); }
+          height: 300px; }
       #desktop_wrapper .home_wrapper .content_wrapper .category_wrapper.fashion {
         top: 67%;
         left: 30%; }
         #desktop_wrapper .home_wrapper .content_wrapper .category_wrapper.fashion .thumb {
           width: 280px;
-          height: 280px;
-          background-image: url("../images/fashion_thumb.jpg"); }
+          height: 280px; }
       #desktop_wrapper .home_wrapper .content_wrapper .category_wrapper.reality {
         top: 55%;
         left: 68%; }
         #desktop_wrapper .home_wrapper .content_wrapper .category_wrapper.reality .thumb {
           width: 240px;
-          height: 240px;
-          background-image: url("../images/reality_thumb.jpg"); }
+          height: 240px; }
       @media (max-width: 1350px) {
         #desktop_wrapper .home_wrapper .content_wrapper .category_wrapper.cars {
           top: 4%;
           left: 5%; }
           #desktop_wrapper .home_wrapper .content_wrapper .category_wrapper.cars .thumb {
             width: 280px;
-            height: 280px;
-            background-image: url("../images/cars_thumb.jpg"); }
+            height: 280px; }
         #desktop_wrapper .home_wrapper .content_wrapper .category_wrapper.commercial {
           top: 10%;
           left: 67%; }
           #desktop_wrapper .home_wrapper .content_wrapper .category_wrapper.commercial .thumb {
             width: 220px;
-            height: 220px;
-            background-image: url("../images/commercial_thumb.jpg"); }
+            height: 220px; }
         #desktop_wrapper .home_wrapper .content_wrapper .category_wrapper.fashion {
           top: 64%;
           left: 22%; }
           #desktop_wrapper .home_wrapper .content_wrapper .category_wrapper.fashion .thumb {
             width: 210px;
-            height: 210px;
-            background-image: url("../images/fashion_thumb.jpg"); }
+            height: 210px; }
         #desktop_wrapper .home_wrapper .content_wrapper .category_wrapper.reality {
           top: 55%;
           left: 68%; }
           #desktop_wrapper .home_wrapper .content_wrapper .category_wrapper.reality .thumb {
             width: 180px;
-            height: 180px;
-            background-image: url("../images/reality_thumb.jpg"); } }
+            height: 180px; } }
   #desktop_wrapper .home_wrapper .contactBtn {
     width: auto;
     height: auto;

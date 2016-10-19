@@ -173,6 +173,8 @@ function VideoGallery(){
 			buildMobileOverlay();
 
 			openMobileOverlay();
+
+			window.scrollTo(0, 0);
 			
 		});
 

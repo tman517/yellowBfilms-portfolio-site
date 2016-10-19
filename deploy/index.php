@@ -60,21 +60,37 @@ require_once 'includes/config.php';
 				<div class="content_wrapper">
 					<div class="category_wrapper cars">
 						<div class="thumb">
+							<img src="images/home/cars/cars1.jpg" class="show" border="0" />
+							<img src="images/home/cars/cars2.jpg" border="0" />
+							<img src="images/home/cars/cars3.jpg" border="0" />
+							<img src="images/home/cars/cars4.jpg" border="0" />
+							<img src="images/home/cars/cars5.jpg" border="0" />
+							<img src="images/home/cars/cars6.jpg" border="0" />
 							<div class="label">CARS</div>
 						</div>
 					</div>
 					<div class="category_wrapper commercial">
 						<div class="thumb">
+							<img src="images/home/commercial/commercial1.jpg" class="show" border="0" />
+							<img src="images/home/commercial/commercial2.jpg" border="0" />
 							<div class="label">COMMERCIAL</div>
 						</div>
 					</div>
 					<div class="category_wrapper fashion">
 						<div class="thumb">
+							<img src="images/home/fashion/fashion1.jpg" class="show" border="0" />
+							<img src="images/home/fashion/fashion2.jpg" border="0" />
+							<img src="images/home/fashion/fashion3.jpg" border="0" />
 							<div class="label">FASHION</div>
 						</div>
 					</div>
 					<div class="category_wrapper reality">
 						<div class="thumb">
+							<img src="images/home/reality/reality1.jpg" class="show" border="0" />
+							<img src="images/home/reality/reality2.jpg" border="0" />
+							<img src="images/home/reality/reality3.jpg" border="0" />
+							<img src="images/home/reality/reality4.jpg" border="0" />
+							<img src="images/home/reality/reality5.jpg" border="0" />
 							<div class="label">REALITY</div>
 						</div>
 					</div>
