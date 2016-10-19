@@ -98,8 +98,48 @@ require_once 'includes/config.php';
 
 		<!-- MOBILE WRAPPER -->
 		<div id="mobile_wrapper">
-
-
+			<div class="reveal"></div>
+			<div class="home_wrapper">
+				<div class="logo"><img src="images/mobile/logo.png" border="0" alt="YellowBFilms" /></div>
+				<div class="content_wrapper">
+					<div class="category_wrapper cars">
+						<div class="thumb">
+							<div class="label">CARS</div>
+						</div>
+					</div>
+					<div class="category_wrapper commercial">
+						<div class="thumb">
+							<div class="label">COMMERCIAL</div>
+						</div>
+					</div>
+					<div class="category_wrapper fashion">
+						<div class="thumb">
+							<div class="label">FASHION</div>
+						</div>
+					</div>
+					<div class="category_wrapper reality">
+						<div class="thumb">
+							<div class="label">REALITY</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer">
+					<div>bongfilms@yahoo.com</div>
+					<div>(626) 555-5555</div>
+					<div>&copy; Copyright 2016 YellowBFilms. All rights reserved.</div>
+				</div>
+				<div class="darkenOverlay"></div>
+				<div class="videoThumb_wrapper">
+					<div class="closeBtn">X</div>
+					<div class="videos">
+						<iframe src="//player.vimeo.com/video/42704707" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+						<iframe src="//player.vimeo.com/video/42704707" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+						<iframe src="//player.vimeo.com/video/42704707" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+						<iframe src="//player.vimeo.com/video/42704707" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+						<iframe src="//player.vimeo.com/video/42704707" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
 		</div>
 
 

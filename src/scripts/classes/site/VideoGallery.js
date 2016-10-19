@@ -52,7 +52,7 @@ function VideoGallery(){
 
 	// ----------- DESKTOP -------------
 	function initDesktop(){
-		$(".category_wrapper").bind("click", function(){
+		$("#desktop_wrapper .category_wrapper").bind("click", function(){
 
 			if($(this).hasClass("cars")){
 				_currentCategoryArray = _carsArray;
@@ -77,7 +77,7 @@ function VideoGallery(){
 			$("#desktop_wrapper .videoGallery_wrapper .thumb:first-child").trigger("click");
 		});
 
-		$("#desktop_wrapper .overlay, .closeBtn").bind("click", function(){
+		$("#desktop_wrapper .overlay, #desktop_wrapper .closeBtn").bind("click", function(){
 			closeOverlay();
 		});
 	}
@@ -116,7 +116,7 @@ function VideoGallery(){
 	function openOverlay() {
 		// if video gallery, setup thumb carousel
 		if(_currentCategoryArray.length > 1){
-			$(".thumbs").slick({
+			$("#desktop_wrapper .videoGallery_wrapper .thumbs").slick({
 				dots:true,
 				infinite:false,
 				speed: 300,
@@ -124,35 +124,12 @@ function VideoGallery(){
 				slidesToScroll: 1,
 				responsive: [
 		    	{	
-		      		breakpoint: 1024,
+		      		breakpoint: 845,
 		      		settings: {
-			        	slidesToShow: 3,
+			        	slidesToShow: 2,
 			        	slidesToScroll: 1
 		      		}
-		    	},
-		    	{
-		     		breakpoint: 768,
-		      		settings: {
-		        		slidesToShow: 2,
-		        		slidesToScroll: 2
-		      		}
-		    	},
-
-		    	{
-		     		breakpoint: 636,
-		      		settings: {
-		        		slidesToShow: 1,
-		        		slidesToScroll: 1
-		      		}
-		    	},
-		    	{
-		     		breakpoint: 568,
-		      		settings: {
-		        		slidesToShow: 1,
-		        		slidesToScroll: 1
-		      		}
 		    	}
-
 		 	 	]
 			});
 		}
@@ -173,12 +150,62 @@ function VideoGallery(){
 		$("#desktop_wrapper .overlay").removeClass("show");
 		$("#desktop_wrapper .videoGallery_wrapper").css({"display":"none"}).removeClass("show");
 		$("#vimeoIframe").attr({"src":""});
-
 	}
 
 
 	// ----------- MOBILE -------------
 	function initMobile(){
+		$("#mobile_wrapper .category_wrapper").bind("click", function(){
+
+			if($(this).hasClass("cars")){
+				_currentCategoryArray = _carsArray;
+			}
+			else if($(this).hasClass("commercial")){
+				_currentCategoryArray = _commercialArray;
+			}
+			else if($(this).hasClass("fashion")){
+				_currentCategoryArray = _fashionArray;
+			}
+			else if($(this).hasClass("reality")){
+				_currentCategoryArray = _realityArray;
+			}
+
+			buildMobileOverlay();
+
+			openMobileOverlay();
+			
+		});
+
+		$("#mobile_wrapper .darkenOverlay, #mobile_wrapper .closeBtn").bind("click", function(){
+			closeMobileOverlay();
+		});
+	}
+
+	function buildMobileOverlay() {
+		$("#mobile_wrapper .videos iframe").remove();
+
+		for(var i = 0; i < _currentCategoryArray.length; i++){
+			var html = '<iframe src="//player.vimeo.com/video/' + _currentCategoryArray[i].vimeoID + '" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>';
+			$("#mobile_wrapper .videos").append(html);
+		}
+	}
+
+	function openMobileOverlay(){
+		$("#mobile_wrapper .darkenOverlay").addClass("show");
+		$("#mobile_wrapper .videoThumb_wrapper").css({"display":"block"});
+
+		setTimeout(function(){
+			$("#mobile_wrapper .videoThumb_wrapper").addClass("show");
+		}, 200);
+	}
+
+	function closeMobileOverlay(){
+		$("#mobile_wrapper .videoThumb_wrapper").removeClass("show");
+
+		setTimeout(function(){
+			$("#mobile_wrapper .darkenOverlay").removeClass("show");
+			$("#mobile_wrapper .videoThumb_wrapper").css({"display":"none"});
+		}, 200);
 	}
 
 	init();

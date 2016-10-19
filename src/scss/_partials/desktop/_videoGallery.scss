@@ -74,6 +74,12 @@
 		&.noThumbs {
 			display:none;
 		}
+
+		@media (max-width:845px){
+			.thumbs {
+				width:520px;
+			}
+		}
 	}
 
 }

@@ -105,6 +105,7 @@ function Site(){
 
 			$("#preloader_wrapper .bg").addClass("hide");
 
+			// for desktop
 			setTimeout(function(){
 				$("#desktop_wrapper .logo_wrapper .logoCenter").addClass("show");
 
@@ -134,6 +135,12 @@ function Site(){
 				}, 200);
 				
 			}, 200);
+
+
+			// for mobile
+			setTimeout(function(){
+				$("#mobile_wrapper .reveal").addClass("hide");
+			}, 300);
 		});
 		
 	}
