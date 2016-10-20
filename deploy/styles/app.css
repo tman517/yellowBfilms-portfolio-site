@@ -556,13 +556,13 @@ div, ul {
           letter-spacing: 8px;
           text-indent: 8px; }
       #mobile_wrapper .home_wrapper .content_wrapper .category_wrapper.cars .thumb {
-        background-image: url("../images/cars_thumb.jpg"); }
+        background-image: url("../images/home/cars/cars1.jpg"); }
       #mobile_wrapper .home_wrapper .content_wrapper .category_wrapper.commercial .thumb {
-        background-image: url("../images/commercial_thumb.jpg"); }
+        background-image: url("../images/home/commercial/commercial1.jpg"); }
       #mobile_wrapper .home_wrapper .content_wrapper .category_wrapper.fashion .thumb {
-        background-image: url("../images/fashion_thumb.jpg"); }
+        background-image: url("../images/home/fashion/fashion1.jpg"); }
       #mobile_wrapper .home_wrapper .content_wrapper .category_wrapper.reality .thumb {
-        background-image: url("../images/reality_thumb.jpg"); }
+        background-image: url("../images/home/reality/reality1.jpg"); }
       @media (max-width: 480px) {
         #mobile_wrapper .home_wrapper .content_wrapper .category_wrapper {
           width: 200px;

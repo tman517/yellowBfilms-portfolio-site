@@ -207,6 +207,7 @@ function VideoGallery(){
 		setTimeout(function(){
 			$("#mobile_wrapper .darkenOverlay").removeClass("show");
 			$("#mobile_wrapper .videoThumb_wrapper").css({"display":"none"});
+			$("#mobile_wrapper .videos iframe").remove();
 		}, 200);
 	}
 
