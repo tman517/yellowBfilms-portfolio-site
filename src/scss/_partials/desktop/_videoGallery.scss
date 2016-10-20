@@ -45,10 +45,15 @@
 			width:774px;
 			height:150px;
 			position:relative;
+			background-color:#000000;
 			top:3px;
 			left:0px;
 			margin:0px auto;
 			display:block;
+
+			&.twoThumbs {
+				width:510px;
+			}
 
 			.thumb {
 				width:250px;

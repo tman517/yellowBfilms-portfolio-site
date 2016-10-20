@@ -11,23 +11,19 @@ function VideoGallery(){
 	var _currentCategoryArray;
 
 	var _carsArray = new Array();
-	_carsArray[0] = {"vimeoID": "42704707", "thumb": "cars/thumb1.jpg"};
-	_carsArray[1] = {"vimeoID": "33828399", "thumb": "cars/thumb2.jpg"};
-	_carsArray[2] = {"vimeoID": "103434099", "thumb": "cars/thumb3.jpg"};
-	_carsArray[3] = {"vimeoID": "344872", "thumb": "cars/thumb4.jpg"};
-	_carsArray[4] = {"vimeoID": "148332415", "thumb": "cars/thumb5.jpg"};
-	_carsArray[5] = {"vimeoID": "143864537", "thumb": "cars/thumb6.jpg"};
+	_carsArray[0] = {"vimeoID": "185035148", "thumb": "cars/thumb1.jpg"};
+	_carsArray[1] = {"vimeoID": "142410811", "thumb": "cars/thumb2.jpg"};
+	_carsArray[2] = {"vimeoID": "142410739", "thumb": "cars/thumb3.jpg"};
+	_carsArray[3] = {"vimeoID": "123328161", "thumb": "cars/thumb4.jpg"};
+	_carsArray[4] = {"vimeoID": "115281232", "thumb": "cars/thumb5.jpg"};
 
 	var _commercialArray = new Array();
-	_commercialArray[0] = {"vimeoID": "143864537", "thumb": "cars/thumb1.jpg"};
-	_commercialArray[1] = {"vimeoID": "143864537", "thumb": "cars/thumb1.jpg"};
-	_commercialArray[2] = {"vimeoID": "143864537", "thumb": "cars/thumb1.jpg"};
+	_commercialArray[0] = {"vimeoID": "115282032", "thumb": "commercial/thumb1.jpg"};
+	_commercialArray[1] = {"vimeoID": "188199479", "thumb": "commercial/thumb2.jpg"};
 
 	var _fashionArray = new Array();
-	_fashionArray[0] = {"vimeoID": "143864537", "thumb": "cars/thumb1.jpg"};
-	_fashionArray[1] = {"vimeoID": "143864537", "thumb": "cars/thumb1.jpg"};
-	_fashionArray[2] = {"vimeoID": "143864537", "thumb": "cars/thumb1.jpg"};
-	_fashionArray[3] = {"vimeoID": "143864537", "thumb": "cars/thumb1.jpg"};
+	_fashionArray[0] = {"vimeoID": "142407611", "thumb": "fashion/thumb1.jpg"};
+	_fashionArray[1] = {"vimeoID": "142407779", "thumb": "fashion/thumb2.jpg"};
 
 	var _realityArray = new Array();
 	_realityArray[0] = {"vimeoID": "143864537", "thumb": "cars/thumb1.jpg"};
@@ -100,6 +96,15 @@ function VideoGallery(){
 
 			$("#desktop_wrapper .thumbs").append(html);
 		}
+
+		// if only 2 thumbs, use smaller container
+		if(_currentCategoryArray.length > 2){
+			$("#desktop_wrapper .thumbs").removeClass("twoThumbs");
+		}
+		else{
+			$("#desktop_wrapper .thumbs").addClass("twoThumbs");
+		}
+		
 	}
 
 	function initThumbListeners(){
@@ -115,12 +120,30 @@ function VideoGallery(){
 
 	function openOverlay() {
 		// if video gallery, setup thumb carousel
-		if(_currentCategoryArray.length > 1){
+		if(_currentCategoryArray.length > 2){
 			$("#desktop_wrapper .videoGallery_wrapper .thumbs").slick({
 				dots:true,
 				infinite:false,
 				speed: 300,
 				slidesToShow: 3,
+				slidesToScroll: 1,
+				responsive: [
+		    	{	
+		      		breakpoint: 845,
+		      		settings: {
+			        	slidesToShow: 2,
+			        	slidesToScroll: 1
+		      		}
+		    	}
+		 	 	]
+			});
+		}
+		else if(_currentCategoryArray.length == 2){
+			$("#desktop_wrapper .videoGallery_wrapper .thumbs").slick({
+				dots:true,
+				infinite:false,
+				speed: 300,
+				slidesToShow: 2,
 				slidesToScroll: 1,
 				responsive: [
 		    	{	
