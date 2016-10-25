@@ -140,8 +140,7 @@ require_once 'includes/config.php';
 					</div>
 				</div>
 				<div class="footer">
-					<div>bongfilms@yahoo.com</div>
-					<div>(626) 555-5555</div>
+					<div>info@yellowbfilms.com</div>
 					<div>&copy; Copyright 2016 YellowBFilms. All rights reserved.</div>
 				</div>
 				<div class="darkenOverlay"></div>

@@ -169,7 +169,9 @@ function VideoGallery(){
 	}
 
 	function closeOverlay() {
-		$("#desktop_wrapper .videoGallery_wrapper .thumbs").slick("unslick");
+		if(_currentCategoryArray.length > 1){
+			$("#desktop_wrapper .videoGallery_wrapper .thumbs").slick("unslick");
+		}
 		$("#desktop_wrapper .overlay").removeClass("show");
 		$("#desktop_wrapper .videoGallery_wrapper").css({"display":"none"}).removeClass("show");
 		$("#vimeoIframe").attr({"src":""});
