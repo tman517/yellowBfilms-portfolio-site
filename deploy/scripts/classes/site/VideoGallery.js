@@ -9,7 +9,7 @@ function VideoGallery(){
 	var _this = this;
 
 	var _currentCategoryArray;
-
+	
 	var _carsArray = new Array();
 	_carsArray[0] = {"vimeoID": "185035148", "thumb": "cars/thumb1.jpg"};
 	_carsArray[1] = {"vimeoID": "142410811", "thumb": "cars/thumb2.jpg"};
@@ -18,7 +18,7 @@ function VideoGallery(){
 	_carsArray[4] = {"vimeoID": "115281232", "thumb": "cars/thumb5.jpg"};
 
 	var _commercialArray = new Array();
-	_commercialArray[0] = {"vimeoID": "115282032", "thumb": "commercial/thumb1.jpg"};
+	_commercialArray[0] = {"vimeoID": "187031190", "thumb": "commercial/thumb1.jpg"};
 	_commercialArray[1] = {"vimeoID": "188199479", "thumb": "commercial/thumb2.jpg"};
 
 	var _fashionArray = new Array();
@@ -26,7 +26,26 @@ function VideoGallery(){
 	_fashionArray[1] = {"vimeoID": "142407779", "thumb": "fashion/thumb2.jpg"};
 
 	var _realityArray = new Array();
-	_realityArray[0] = {"vimeoID": "143864537", "thumb": "cars/thumb1.jpg"};
+	
+	/*
+	var _carsArray = new Array();
+	_carsArray[0] = {"vimeoID": "172433957", "thumb": "cars/thumb1.jpg"};
+	_carsArray[1] = {"vimeoID": "172433957", "thumb": "cars/thumb2.jpg"};
+	_carsArray[2] = {"vimeoID": "172433957", "thumb": "cars/thumb3.jpg"};
+	_carsArray[3] = {"vimeoID": "172433957", "thumb": "cars/thumb4.jpg"};
+	_carsArray[4] = {"vimeoID": "172433957", "thumb": "cars/thumb5.jpg"};
+
+	var _commercialArray = new Array();
+	_commercialArray[0] = {"vimeoID": "172433957", "thumb": "commercial/thumb1.jpg"};
+	_commercialArray[1] = {"vimeoID": "172433957", "thumb": "commercial/thumb2.jpg"};
+
+	var _fashionArray = new Array();
+	_fashionArray[0] = {"vimeoID": "172433957", "thumb": "fashion/thumb1.jpg"};
+	_fashionArray[1] = {"vimeoID": "172433957", "thumb": "fashion/thumb2.jpg"};
+
+	var _realityArray = new Array();
+	_realityArray[0] = {"vimeoID": "172433957", "thumb": "cars/thumb1.jpg"};
+	*/
 	
 	// ----------------------- 
 	// -- PUBLIC PROPERTIES -- 
@@ -114,7 +133,67 @@ function VideoGallery(){
 
 			// play video
 			var videoID = $(this).data("video");
-			$("#vimeoIframe").attr({"src":"//player.vimeo.com/video/" + videoID + "?autoplay=1"});
+
+			// remove current iframe player
+			$("#vimeoIframe").remove();
+			var vimeoHTML = '<iframe id="vimeoIframe" src="//player.vimeo.com/video/' + videoID + '?autoplay=1" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>';
+
+			$("#desktop_wrapper .video_container").append(vimeoHTML);
+
+			//
+			var iframePlayer = new Vimeo.Player('vimeoIframe');
+
+			iframePlayer.on('ended', function(){
+
+				var currentThumb = $("#desktop_wrapper .videoGallery_wrapper .thumb.selected").index("#desktop_wrapper .videoGallery_wrapper .thumb") + 1;
+				var thumbCount = $("#desktop_wrapper .videoGallery_wrapper .thumb").size();
+				var nextThumb;
+
+				// if last thumb
+				if(currentThumb == thumbCount){
+					// if more than one thumb, loop back to first thumb if last video
+					if(thumbCount > 1){
+						$("#desktop_wrapper .videoGallery_wrapper .thumb:nth-child(1)").trigger("click");
+
+						// go to first slide
+						$("#desktop_wrapper .videoGallery_wrapper .thumbs").slick("slickGoTo", 0);
+					}
+					// else close overlay if only one video
+					else {
+						closeOverlay();
+					}
+				}
+				// play next video
+				else {
+					$("#desktop_wrapper .videoGallery_wrapper .thumb:nth-child(" + (currentThumb + 1) + ")").trigger("click");
+
+					// go to slide
+					$("#desktop_wrapper .videoGallery_wrapper .thumbs").slick("slickGoTo", (currentThumb));
+
+				}
+			});
+
+			/*
+			iframePlayer.on('ended', function(){
+				console.log("ended");
+
+				var currentThumb = $("#desktop_wrapper .videoGallery_wrapper .thumb.selected").index();
+				var thumbCount = $("#desktop_wrapper .videoGallery_wrapper .thumb").size();
+				var nextThumb;
+
+				console.log("currentThumb", currentThumb);
+				console.log("thumbCount", thumbCount);
+
+				if(currentThumb == thumbCount){
+					console.log("closeOverlay");
+					closeOverlay();
+				}
+				else {
+					console.log("trigger next thumb");
+					$("#desktop_wrapper .videoGallery_wrapper .thumb:nth-child(" + (currentThumb + 1) + ")").trigger("click");
+				}
+			});
+			*/
 		});
 	}
 

@@ -7,9 +7,14 @@ function Home(){
 	// -- PRIVATE PROPERTIES -- 
 	// ------------------------ 
 	var _this = this;
-	var _thumbRotationCounterMax = 5;
+
+	var _thumbRotationCounterRandomMax = 5;
+	var _thumbRotationCounterRandomMin = 1;
+	var _thumbRotationCounterMax;
 	var _thumbRotationCounter = 0;
 	var _timer;
+
+	var _thumbArray = new Array();
 	
 	// ----------------------- 
 	// -- PUBLIC PROPERTIES -- 
@@ -38,6 +43,13 @@ function Home(){
 
 	// ----------- DESKTOP -------------
 	function initDesktop(){
+		_thumbArray[0] = $("#desktop_wrapper .category_wrapper.cars");
+		_thumbArray[1] = $("#desktop_wrapper .category_wrapper.commercial");
+		_thumbArray[2] = $("#desktop_wrapper .category_wrapper.fashion");
+		_thumbArray[3] = $("#desktop_wrapper .category_wrapper.reality");
+
+		_thumbRotationCounterMax = Global.getRandomNumberBetween(_thumbRotationCounterRandomMin, _thumbRotationCounterRandomMax);
+
 		_this.startTimer();
 	}
 
@@ -51,6 +63,31 @@ function Home(){
 	}
 
 	function showNextThumbs(){
+		console.log("------showNextThumbs--------");
+
+		var randomCategoryNum = Global.getRandomNumberBetween(0, (_thumbArray.length - 1));
+
+		console.log("randomCategoryNum", randomCategoryNum);
+
+		var nextThumb = _thumbArray[randomCategoryNum].find("img.show").index() + 2;
+
+		console.log("nextThumb", nextThumb);
+
+		 _thumbArray[randomCategoryNum].find("img.show").removeClass("show");
+
+		 if(nextThumb > _thumbArray[randomCategoryNum].find("img").size()){
+		 	_thumbArray[randomCategoryNum].find("img:first-child").addClass("show");
+		 }
+		 else{
+		 	_thumbArray[randomCategoryNum].find("img:nth-child(" + nextThumb + ")").addClass("show");
+		 }
+
+
+		// set random timeout for next loop
+		_thumbRotationCounterMax = Global.getRandomNumberBetween(_thumbRotationCounterRandomMin, _thumbRotationCounterRandomMax);
+
+
+		/*
 		// cars
 		var nextCar = $("#desktop_wrapper .category_wrapper.cars img.show").index() + 2;
 
@@ -104,6 +141,7 @@ function Home(){
 				$("#desktop_wrapper .category_wrapper.reality img:nth-child(" + nextReality+ ")").addClass("show");
 			}
 		}, 450);
+		*/
 	}
 
 	init();

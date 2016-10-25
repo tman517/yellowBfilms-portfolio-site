@@ -101,9 +101,7 @@ require_once 'includes/config.php';
 
 			<div class="videoGallery_wrapper">
 				<div class="closeBtn">X</div>
-				<div class="video_container">
-					<iframe id="vimeoIframe" src="" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-				</div>
+				<div class="video_container"></div>
 				<div class="thumb_container">
 					<div class="thumbs">
 					</div>
@@ -169,7 +167,7 @@ require_once 'includes/config.php';
 		<!-- scripts -->
 		<script type="text/javascript" src="scripts/libs/libs-bundle-min.js"></script>
 		<script type="text/javascript" src="scripts/classes/all-bundle-min.js"></script>
-
+		<script src="https://player.vimeo.com/api/player.js"></script>
 
 		<!-- start site -->
 		<script type="text/javascript">
