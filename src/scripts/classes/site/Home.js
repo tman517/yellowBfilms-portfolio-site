@@ -9,9 +9,7 @@ function Home(){
 	var _this = this;
 
 	var _thumbRotationCounterRandomMax = 5;
-	var _thumbRotationCounterRandomMin = 1;
-	var _thumbRotationCounterMax;
-	var _thumbRotationCounter = 0;
+	var _thumbRotationCounterRandomMin = 2;
 	var _timer;
 
 	var _thumbArray = new Array();
@@ -43,48 +41,44 @@ function Home(){
 
 	// ----------- DESKTOP -------------
 	function initDesktop(){
-		_thumbArray[0] = $("#desktop_wrapper .category_wrapper.cars");
-		_thumbArray[1] = $("#desktop_wrapper .category_wrapper.commercial");
-		_thumbArray[2] = $("#desktop_wrapper .category_wrapper.fashion");
-		_thumbArray[3] = $("#desktop_wrapper .category_wrapper.reality");
-
-		_thumbRotationCounterMax = Global.getRandomNumberBetween(_thumbRotationCounterRandomMin, _thumbRotationCounterRandomMax);
+		_thumbArray[0] = {"e":$("#desktop_wrapper .category_wrapper.cars"), "max":Global.getRandomNumberBetween(_thumbRotationCounterRandomMin, _thumbRotationCounterRandomMax), "current":0};
+		_thumbArray[1] = {"e":$("#desktop_wrapper .category_wrapper.commercial"), "max":Global.getRandomNumberBetween(_thumbRotationCounterRandomMin, _thumbRotationCounterRandomMax), "current":0};
+		_thumbArray[2] = {"e":$("#desktop_wrapper .category_wrapper.fashion"), "max":Global.getRandomNumberBetween(_thumbRotationCounterRandomMin, _thumbRotationCounterRandomMax), "current":0};
+		_thumbArray[3] = {"e":$("#desktop_wrapper .category_wrapper.reality"), "max":Global.getRandomNumberBetween(_thumbRotationCounterRandomMin, _thumbRotationCounterRandomMax), "current":0};
 
 		_this.startTimer();
 	}
 
 	function thumbRotationTick(){
-		_thumbRotationCounter++;
+		console.log("tick");
+		for(var i = 0; i < _thumbArray.length; i++){
+			var current = _thumbArray[i].current;
+			var max = _thumbArray[i].max;
 
-		if(_thumbRotationCounter == _thumbRotationCounterMax){
-			showNextThumbs();
-			_thumbRotationCounter = 0;
+			if(current == max){
+				showNextThumbs(_thumbArray[i].e);
+
+				// reset for next loop
+				_thumbArray[i].current = 0;
+				_thumbArray[i].max = Global.getRandomNumberBetween(_thumbRotationCounterRandomMin, _thumbRotationCounterRandomMax);
+			}
+			else{
+				_thumbArray[i].current = current + 1;
+			}
 		}
 	}
 
-	function showNextThumbs(){
-		console.log("------showNextThumbs--------");
+	function showNextThumbs(e){
+		var nextThumb = e.find("img.show").index() + 2;
 
-		var randomCategoryNum = Global.getRandomNumberBetween(0, (_thumbArray.length - 1));
+		e.find("img.show").removeClass("show");
 
-		console.log("randomCategoryNum", randomCategoryNum);
-
-		var nextThumb = _thumbArray[randomCategoryNum].find("img.show").index() + 2;
-
-		console.log("nextThumb", nextThumb);
-
-		 _thumbArray[randomCategoryNum].find("img.show").removeClass("show");
-
-		 if(nextThumb > _thumbArray[randomCategoryNum].find("img").size()){
-		 	_thumbArray[randomCategoryNum].find("img:first-child").addClass("show");
-		 }
-		 else{
-		 	_thumbArray[randomCategoryNum].find("img:nth-child(" + nextThumb + ")").addClass("show");
-		 }
-
-
-		// set random timeout for next loop
-		_thumbRotationCounterMax = Global.getRandomNumberBetween(_thumbRotationCounterRandomMin, _thumbRotationCounterRandomMax);
+		if(nextThumb > e.find("img").size()){
+			e.find("img:first-child").addClass("show");
+		}
+		else{
+			e.find("img:nth-child(" + nextThumb + ")").addClass("show");
+		}
 
 
 		/*
