@@ -34,9 +34,7 @@ function Home(){
 	// == PRIVATE METHODS ==
 	// ---------------------
 	function init(){
-		if(!Global.isMobile()){
-			initDesktop();
-		}
+		initDesktop();
 	}
 
 	// ----------- DESKTOP -------------
