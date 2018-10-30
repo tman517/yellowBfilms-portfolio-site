@@ -11,11 +11,16 @@ function VideoGallery(){
 	var _currentCategoryArray;
 	
 	var _carsArray = new Array();
-	_carsArray[0] = {"vimeoID": "185035148", "thumb": "cars/thumb1.jpg"};
-	_carsArray[1] = {"vimeoID": "142410811", "thumb": "cars/thumb2.jpg"};
-	_carsArray[2] = {"vimeoID": "142410739", "thumb": "cars/thumb3.jpg"};
-	_carsArray[3] = {"vimeoID": "123328161", "thumb": "cars/thumb4.jpg"};
-	_carsArray[4] = {"vimeoID": "115281232", "thumb": "cars/thumb5.jpg"};
+	_carsArray[0] = {"vimeoID": "297779009", "thumb": "cars/thumb7.jpg"};
+	_carsArray[1] = {"vimeoID": "297779072", "thumb": "cars/thumb8.jpg"};
+	_carsArray[2] = {"vimeoID": "297779040", "thumb": "cars/thumb9.jpg"};
+	_carsArray[3] = {"vimeoID": "297779105", "thumb": "cars/thumb10.jpg"};
+
+	_carsArray[4] = {"vimeoID": "185035148", "thumb": "cars/thumb1.jpg"};
+	_carsArray[5] = {"vimeoID": "142410811", "thumb": "cars/thumb2.jpg"};
+	_carsArray[6] = {"vimeoID": "142410739", "thumb": "cars/thumb3.jpg"};
+	_carsArray[7] = {"vimeoID": "123328161", "thumb": "cars/thumb4.jpg"};
+	_carsArray[8] = {"vimeoID": "115281232", "thumb": "cars/thumb5.jpg"};
 
 	var _commercialArray = new Array();
 	_commercialArray[0] = {"vimeoID": "187031190", "thumb": "commercial/thumb1.jpg"};
@@ -297,6 +302,8 @@ function VideoGallery(){
 	}
 
 	function openMobileOverlay(){
+		$("#mobile_wrapper .home_wrapper").addClass("static");
+
 		$("#mobile_wrapper .darkenOverlay").addClass("show");
 		$("#mobile_wrapper .videoThumb_wrapper").css({"display":"block"});
 
@@ -306,6 +313,7 @@ function VideoGallery(){
 	}
 
 	function closeMobileOverlay(){
+		$("#mobile_wrapper .home_wrapper").removeClass("static");
 		$("#mobile_wrapper .videoThumb_wrapper").removeClass("show");
 
 		setTimeout(function(){

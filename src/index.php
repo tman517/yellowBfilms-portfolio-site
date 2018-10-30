@@ -141,16 +141,18 @@ require_once 'includes/config.php';
 					<div>info@yellowbfilms.com</div>
 					<div>&copy; Copyright 2016 YellowBFilms. All rights reserved.</div>
 				</div>
-				<div class="darkenOverlay"></div>
-				<div class="videoThumb_wrapper">
-					<div class="closeBtn">X</div>
-					<div class="videos">
-						<iframe src="//player.vimeo.com/video/42704707" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-						<iframe src="//player.vimeo.com/video/42704707" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-						<iframe src="//player.vimeo.com/video/42704707" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-						<iframe src="//player.vimeo.com/video/42704707" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-						<iframe src="//player.vimeo.com/video/42704707" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-					</div>
+			</div>
+			<div class="darkenOverlay"></div>
+			<div class="videoThumb_wrapper">
+				<div class="closeBtn">X</div>
+				<div class="videos">
+					<!--
+					<iframe src="//player.vimeo.com/video/42704707" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+					<iframe src="//player.vimeo.com/video/42704707" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+					<iframe src="//player.vimeo.com/video/42704707" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+					<iframe src="//player.vimeo.com/video/42704707" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+					<iframe src="//player.vimeo.com/video/42704707" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+					-->
 				</div>
 			</div>
 		</div>

@@ -11,6 +11,10 @@
 	background-position:top center;
 	background-repeat:no-repeat;
 
+	&.static {
+		position:fixed;
+	}
+
 	.logo {
 		width:auto;
 		max-width:450px;

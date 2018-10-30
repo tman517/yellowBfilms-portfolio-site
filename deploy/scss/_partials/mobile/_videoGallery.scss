@@ -3,7 +3,7 @@
 
 	width:100%;
 	height:auto;
-	min-height:100%;
+	min-height:100vh;
 	overflow:hidden;
 	position:absolute;
 	top:0px;
@@ -16,6 +16,7 @@
 
 	&.show {
 		opacity:1;
+		position:relative;
 	}
 
 	.closeBtn {
